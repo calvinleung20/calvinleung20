@@ -24,9 +24,46 @@ main {
 }
 
 header {
+  margin-top:50px;
+  box-sizing: border-box;
+  width: 100%;
+  border: solid #5B6DCD 10px;
+  padding: 5px;
 
 }
 
 footer {
+background-color: green;
 margin-top: 15px;
+box-sizing: content-box;
+width: 100%;
+border: solid #5B6DCD 10px;
+padding: 5px;
+}
+.first {
+  background-color: red;
+  width: 400px;
+  height: 200px;
+  top: 0;
+  left: 100px;
+}
+
+.second {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  top: -150px;
+  left: 125px;
+}
+
+.third {
+  background-color: pink;
+  width: 200px;
+  height: 300px;
+  top: -375px;
+  left: 250px;
+}
+
+.first, .second, .third {
+  position: relative;
 }
