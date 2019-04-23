@@ -73,29 +73,34 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
 
-          <!-- <p>I personally believe that arguments in relationships are natural and should be expected.</p>
+          <p>I believe that both my girlfriend (Brianna) and I can admit that conflict is a part of all relationships, and over time I believe that we have both improved in our conflict management including the application of anecdotes like “picking the right battles” or “letting things go”.</p>
 
-          <p>So when Brianna accused me of "Not texting her", I realized that this was a opportunity to do two things. Number One - I could show her the truth and prove her wrong and Number Two - I could use Python to construct </p>
+          <p>So a couple months ago, when Brianna accused me of never replying to her messages - I knew that tangible proof that I do reply often was probably not a solution. </p>
 
-          <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
 
-          <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+          <p>But it did get me thinking - I was pretty sure that I could somehow get my hands on my chat history, either I could scrape it or use an third party app to pull it. And once I had the chat history, I knew that I could load it into python and parse/format the data.</p>
 
-          <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+          <p>From there, it would be as simple as counting the number of messages ! (at least that’s what I naively thought). My experience in Python at that time consisted of simple scripts to make life easier at work and to automate the boring stuff (File manipulation, working with CSV files, and automated testing of ETL processes) .</p>
 
-          <h2 class="section-heading">The Final Frontier</h2>
+          <p> So although I knew enough to get my started, I knew that it was probably not going to be a walk in the park and I would need to learn more – but I was curious and motivated to reach my goal and find the truth (half-serious).</p>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+          <p>So after checking with my girlfriend, I decided to document the journey of this project here. I will go over at a high level the process that I took, as well as what I found interesting along the way.</p>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+          <h2 class="section-heading">High Level Summary</h2>
 
-          <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+          <p>Downloaded FB Chat history in JSON - Turns out that I didn’t even need to scrape anything as Facebook makes it very easy to download your chat history in JSON format.</p>
 
-          <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+          <p>Data Loading, Data Processing and Aggregation in Python using Pandas - I learnt about the Pandas library from a member of my team at work. It is an open source data science python library with DataFrame objects that makes it incredibly simple to manipulate data and perform analysis. I was happily surprised to find that it even has a function to convert JSON strings to pandas objects (among other tools for reading and writing data). Although Pandas was something new for me, it was incredibly easy to learn given its popularity (abundance of tutorials) and the fact that I had access to a pro at work that graciously allowed me to bug him with questions.</p>
 
-          <h2 class="section-heading">Reaching for the Stars</h2>
+          <!-- <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote> -->
+          <p>Managed time stamps and special characters - timestamps needed to be standardized and converted from UNIX time.</p>
+          <p>Tried out various method to plot the data -  Matlab was notoriously hard to use, Plotly was a better solution. </p>
+          <p>Found out that it has already been done many times on the internet and kicked myself for not searching beforehand.</p>
 
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p> -->
+
+          <h2 class="section-heading">Output Graphs</h2>
+
+          <p>Here you can find definitive proof that I <strong>do</strong> text more :).</p>
 
           <a href="#">
             <img class="img-fluid" src="FB Analysis Calvin and Bree Graphs/average-number-of-words-per-message.png" alt="">
